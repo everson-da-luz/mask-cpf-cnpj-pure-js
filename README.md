@@ -14,16 +14,16 @@ Selecione os campos, buscando pela classe, no qual deseja aplicar a mascara.
 let inputCpfCnpj = document.getElementsByClassName('mask-cpf-cnpj')
 ```
 
-Por fim, execute a função ```skCpfCnpjPureJs()``` passando como parametro os elementos que selecionados anteriormente.
+Por fim, execute a função ```skCpfCnpjPureJs()``` passando por parâmetro os elementos que foram selecionados anteriormente.
 ```js
 maskCpfCnpjPureJs(inputCpfCnpj);
 ```
 
-Você também pode passar um segundo paramentro para informar que deseja aplicar somente a mascara para CPF ou CNPJ.
+Você também pode passar um segundo parâmentro para informar que deseja aplicar a mascara somente para CPF ou CNPJ.
 ```js
 maskCpfCnpjPureJs(inputCpf, 'cpf');
 maskCpfCnpjPureJs(inputCnpj, 'cnpj');
 ```
 
-Caso não seja especificado esse parametro, o campo vai conter as duas mascaras ao mesmo tempo.  
+Caso não seja especificado esse parâmetro, o campo vai conter as duas mascaras ao mesmo tempo.  
 O exemplo completo você pode ver no arquivo ```index.html```
