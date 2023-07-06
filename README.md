@@ -1,0 +1,1 @@
+Simples mascara para CPF e CNPJ utilizando JavaScript puro!  

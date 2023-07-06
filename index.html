@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>Mask CPF CNPJ Pure JS</title>
+	</head>
+	<body>
+		<form action="" method="post" onsubmit="return false">
+			<div>
+				<label for="cpf-cnpj">CPF and CNPJ</label>
+				<input type="text" name="cpf-cnpj" id="cpf-cnpj" class="mask-cpf-cnpj">
+			</div>
+
+			<div>
+				<label for="cpf">CPF</label>
+				<input type="text" name="cpf" id="cpf" class="mask-cpf">
+			</div>
+
+			<div>
+				<label for="cnpj">CNPJ</label>
+				<input type="text" name="cnpj" id="cnpj" class="mask-cnpj">
+			</div>
+        </form>
+
+		<script type="text/javascript" src="mask-cpf-cnpj-pure-js.js"></script>
+
+		<script type="text/javascript">
+			let inputCpfCnpj = document.getElementsByClassName('mask-cpf-cnpj');
+			let inputCpf = document.getElementsByClassName('mask-cpf');
+			let inputCnpj = document.getElementsByClassName('mask-cnpj');
+
+			maskCpfCnpjPureJs(inputCpfCnpj);
+			maskCpfCnpjPureJs(inputCpf, 'cpf');
+			maskCpfCnpjPureJs(inputCnpj, 'cnpj');
+		</script>
+	</body>
+</html>
